@@ -13,11 +13,11 @@ var articles = {
         content:`
         
                     <p>
-                        This is the content of my first article. I love cats.This is the content of my first article. I love cats.This is the content of my first article. I love cats.
+                        This is the content of my first article. I love cats.This is the content of my first article. I love cats.This is the content of my first article. I love cats a lot
                     </p>
                     
                     <p>
-                        This is the content of my first article. I love cats.This is the content of my first article. I love cats.This is the content of my first article. I love cats.
+                        Durga Puja is right here. Thanks to Ma durga for making this work! LOL! HAPPY DURGA PUJA! It's rea;;y hard to concentrate when you are a bengali and durga puja is knocking at the door.
                     </p>`
                 
     
