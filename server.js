@@ -17,7 +17,7 @@ var articles = {
                     </p>
                     
                     <p>
-                        Durga Puja is right here. Thanks to Ma durga for making this work! LOL! HAPPY DURGA PUJA! It's rea;;y hard to concentrate when you are a bengali and durga puja is knocking at the door.
+                        Durga Puja is right here. Thanks to Ma durga for making this work! LOL! HAPPY DURGA PUJA! It's really hard to concentrate when you are a bengali and durga puja is knocking at the door.
                     </p>`
                 
     
