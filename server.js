@@ -7,9 +7,9 @@ app.use(morgan('combined'));
 
 var articles = {
     'article-one': {
-        title: 'Article One|Pallavi MAzumder',
+        title: 'Article One | Pallavi MAzumder',
         heading: 'Article One',
-        date: '25 Sept 2016',
+        date: '25 Sept, 2016',
         content:`
         
                     <p>
@@ -24,9 +24,9 @@ var articles = {
                   
     },
     'article-two': {
-     title: 'Article Two|Pallavi MAzumder',
+     title: 'Article Two | Pallavi MAzumder',
         heading: 'Article Two',
-        date: '28 Sept 2016',
+        date: '28 Sept, 2016',
         content: `
         
                     <p>
@@ -45,7 +45,7 @@ var articles = {
     'article-three' : {
          title: 'Article Three|Pallavi MAzumder',
         heading: 'Article Three',
-        date: '30 Sept 2016',
+        date: '30 Sept, 2016',
         content:`
         
                     <p>
@@ -60,7 +60,7 @@ var articles = {
     }
 };
 
-function createTemplate (data){
+function createTemplate (data) {
     var title = data.title;
     var date = data.date;
     var heading = data.heading;
@@ -73,7 +73,7 @@ function createTemplate (data){
             <title>
                 ${title}
             </title>
-            <meta name="viewport" content="width=device-width,initial-scale=1"/>
+            <meta name="viewport" content="width=device-width,initial-scale=1" />
             <link href="/ui/style.css" rel="stylesheet" />
             
         </head>
@@ -83,9 +83,9 @@ function createTemplate (data){
                     <a href="/">Home</a>
                 </div>
                 <hr/>
-                <h1>
+                <h3>
                     ${heading}
-                </h1>
+                </h3>
                 <div>
                     ${date}
                 </div>
@@ -95,24 +95,20 @@ function createTemplate (data){
                 </div>
             </div>
         </body>
-    
     </html>
-`;
+    `;
     return htmlTemplate;
 }
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/articleName',function (req,res) {
+app.get('/:articleName',function (req,res) {
     //ArticleName == article-one
     //articles[articleName]== content object of articleOne
     var articleName = req.params.articleName;
     res.send(createTemplate(articles[articleName]));
 });
-
-
-
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
