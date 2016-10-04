@@ -13,7 +13,7 @@ var articles = {
         content:`
         
                     <p>
-                        This is the content of my first article. I love cats.This is the content of my first article. I love cats.This is the content of my first article. I love cats a lot
+                        This is the content of my first article. I love cats.This is the content of my first article. I love cats.This is the content of my first article. I love cats a lot.
                     </p>
                     
                     <p>
