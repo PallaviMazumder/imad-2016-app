@@ -23,6 +23,6 @@ button.onclick = function(){
     
   //make the request
     request.open('GET','http://pallavimazumder.imad.hasura-app.io/counter',true);
-    request.send('NULL');
+    request.send(null);
     
 };
